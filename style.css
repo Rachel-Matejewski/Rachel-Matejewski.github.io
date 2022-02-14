@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #44647c;
+  padding: 2px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 22%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #bdcddc;
+  padding: 15px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 78%;
+  background-color: #edeff4;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #44647c;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Rachel Matejewski</h2>
+
+<header>
+    <p>About Me</p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+<div>
+<p style="float: left;"><img src="https://attachments.office.net/owa/matejews%40msu.edu/service.svc/s/GetAttachmentThumbnail?id=AAMkADhjYmE2MmRlLTUzM2UtNGQ1Ny1iYWNjLThmODNmNTk5NjMyNwBGAAAAAABSeB9ERbyhSr44X0MmeaEdBwDnOsv2jASgTohhtAJuvQ9oAAAAAAEMAADnOsv2jASgTohhtAJuvQ9oAAOcitnTAAABEgAQADWJ7m%2BfiBBHhbMcZWCbZlc%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBRDY1NDI2MkM2QUYyOTYxQUExRThDQUI3OEZGMUIyNzBFNzA3RTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiItdFpVSml4cThwWWFvZWpLdDRfeHNuRG5CLWsifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiNDk5NjczMjNmOTQ2NDhmYzkzYzk0ZGRlOTUzMjNkNGEiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEAyMjE3NzEzMC02NDJmLTQxZDktOTIxMS03NDIzN2FkNTY4N2QiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjExNTM4MzYyOTY4MzczODE4MTlcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCJkZWFlNGQyOC0wZmRhLTQ0MmUtODdkOC0wMDVkMGI3YTA0NTFcIixcInByaW1hcnlzaWRcIjpcIlMtMS01LTIxLTIxODEwMDUyNzgtMjMxMjA4MDg0Mi0xMzMzMTg0ODA3LTIxMjMzMzI1XCJ9IiwibmJmIjoxNjQ0ODUyMzE2LCJleHAiOjE2NDQ4NTI5MTYsImlzcyI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEAyMjE3NzEzMC02NDJmLTQxZDktOTIxMS03NDIzN2FkNTY4N2QiLCJhdWQiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYXR0YWNobWVudHMub2ZmaWNlLm5ldEAyMjE3NzEzMC02NDJmLTQxZDktOTIxMS03NDIzN2FkNTY4N2QiLCJoYXBwIjoib3dhIn0.l8xl8LyMtva1df3ugNg1eQWhv1Kfic1bCTLjyxY6eYUUDlBx12BT2fke2_8-jAk5mpew_Kz3_3n5Kx6GK_8hmZuddYFcdGX7mGZydqpVXwHKqtMQekNRKOVLsG6iSHwU2Ys4mYlJLZ0gpJntTOL4ZB7nedtFofRCy710cKtMC2GLyTHr57n2CaG5cC6O3sQ6jmP4t2L0I2B0LJPI_s2L1dsyohW3QfXEISV4rrJbV4FZaAaDKyDmU4BLX_s3tQ32pkoFHAPKSh58dtSQUG7dYEXQjoU6_zZlX4LHAm_vMHGXpFNT49htdmBjsMwPtF7k8XLwBKVAFxOHCm9lRJW_7A&X-OWA-CANARY=QTIvredrM0mnuv6mppY4tVCEiUzO79kYfGr4GOAh3pGAOLmT7W8wVC8mOi6biK-O81FfUdL_VW8.&owa=outlook.office.com&scriptVer=20220128003.07&animation=true" height="180px" width="150px" border="2px"></p>
+</div>
+</ul>
+  </nav>
+  
+  <article>
+    <h1>Hello!</h1>
+    <p>I am a senior undergraduate student at Michigan State University studying for my major in Environmental Biology/Zoology and minor in Geographical Informatin Science</p>
+    <p>I spent my previous two summers working at Kellog Biological Station's LTER as a field technician. I worked for the Haddad and Landis labs as a field tech on their agricultural predator projects, where I worked with Lady Bettles and Ants. As well as assisting and building other LTER experiments, including the new rainout experiment. </p>
+     <p>I now am an intern at RS&GIS where I work as a analyst processing drone data and creating data for the SOM Hydrography project. </p>
+  </article>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
