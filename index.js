@@ -6,15 +6,15 @@ const config = {
    * Replace this with your Mapbox Access Token (**Do this first!**)
    */
   accessToken:
-    "pk.eyJ1IjoiY3VybXVkZ2VvbnBoZCIsImEiOiJja3VxNjkxN2k0c2w0MnptbjU0N242cHFzIn0.DI3yxzJz-CO25QvNLXESOQ",
+    "pk.eyJ1IjoibWF0ZWpld3MiLCJhIjoiY2t3Mml4M3hiYWN2dzMwcXAxZm9vajFnOSJ9.iEsyjKbZpd4iujEGtfN5bQ",
   /**
    * Replace with the url of your map style
    */
-  mapStyle: "mapbox://styles/curmudgeonphd/ckof3wsww4ig418jrc0eezyjx",
+  mapStyle: "mapbox://styles/matejews/ckzmz18kh001214o2jca6tzss",
   /**
    * The layer within the vector tileset to use for querying
    */
-  sourceLayer: "kabupaten_gdf-0osmrh",
+  sourceLayer: "proposed-humpback-whale-criti-8x660k",
   /**
    * This sets the title in the sidebar and the <title> tag of the app
    */
